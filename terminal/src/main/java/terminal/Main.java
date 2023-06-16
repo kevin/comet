@@ -7,12 +7,13 @@ import imgui.app.Configuration;
 public class Main extends Application {
     @Override
     protected void configure(Configuration config) {
-        config.setTitle("COMET");
+        config.setTitle("Comet Terminal");
     }
 
     @Override
     public void process() {
-        ImGui.text("Hello, World!");
+    	Login.show();
+        ImGui.showDemoWindow();
     }
 
     public static void main(String[] args) {
